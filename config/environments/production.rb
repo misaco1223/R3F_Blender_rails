@@ -97,6 +97,8 @@ Rails.application.configure do
   config.active_record.attributes_for_inspect = [ :id ]
 
   # Enable DNS rebinding protection and other `Host` header attacks.
+  config.hosts << "localhost"
+  config.hosts << "127.0.0.1"
   config.hosts << "cut-cube-simulator.onrender.com"
   # config.hosts = [
   #   "example.com",     # Allow requests from example.com
