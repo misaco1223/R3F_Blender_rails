@@ -14,7 +14,8 @@ RUN apt-get update -qq && apt-get install -y \
   libxtst6 \
   libxkbcommon0 \
   libxi6 \
-  libgl1-mesa-glx \
+  libgl1 \
+  #libgl1-mesa-glx \
   libglib2.0-0 \
   wget \
   curl \
